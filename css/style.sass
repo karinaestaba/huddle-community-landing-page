@@ -238,5 +238,134 @@ a
     text-align: center
     color: $light
 
-// @media (min-width: 998px)
+@media (min-width: 998px)
+  .container
+    padding-left: 0
+    padding-right: 0
+    max-width: 1280px
+    text-align: left
+
+  a
+    &.btn
+      text-align: center
+      width: 280p
+      min-width: auto
+      padding: 17px 10px
+      font-weight: 400
+      font-size: 15px
+      line-height: 22px
+
+    &.cta-header
+      width: 192px
+      padding: 10px
+      font-size: 12px
+      font-weight: 600
+      letter-spacing: 1px
+
+  .main
+    &-header
+      padding: 50px 0
+
+    &-logo
+      > img
+        width: 200px
+
+  .hero
+    padding-top: 22px
+
+    h1
+      font-size: 40px
+      line-height: 61px
+      white-space: pre-line
+      margin-bottom: 31px
+
+    p
+      margin-top: 0
+      line-height: 29px
+
+    > .container
+      display: grid
+      grid-template-areas: "c-text c-img"
+      gap: 20px
+      grid-template-columns: 2.5fr 3fr
+      padding-top: 0
+      align-items: center
+
+    &-text
+      grid-area: c-text
+
+    .hero
+      &-img
+        grid-area: c-img
+        margin-top: 0
+
+        > img
+          max-width: none
+          width: 100%
+
+    a
+      &.btn
+        min-width: auto
+        width: 278px
+  
+  .card
+    &-list
+      padding-top: 200px
+      padding-left: 20px
+      padding-right: 20px
+
+    &-img
+      grid-area: c-img
+      margin-top: 0
+      margin-right: 11px
+      margin-left: 20px
+
+      > img
+        width: 96%
+      
+    &-item
+      display: grid
+      align-items: center
+      gap: 16px
+      padding: 13px 13px 13px 0
+      min-height: 445px
+
+      h2
+        font-size: 28px
+        line-height: 33px
+        margin-top: 9px
+
+      p
+        font-size: 17px
+        margin-top: 14px
+        line-height: 28px
+
+      &:nth-child(2)
+        h2
+          margin-top: 15px
+
+        .card-img
+          margin-right: 15px
+          margin-left: 0
+          margin-top: 6px
+
+      &:nth-child(3)
+        h2
+          margin-top: 26px
+
+        .card-img
+          margin-right: 0
+          margin-left: 12px
+          margin-top: 18px
+
+      &:nth-child(odd)
+        grid-template-areas: ". c-text . c-img"
+        grid-template-columns: .5fr 2.3fr .5fr 2fr
+
+      &:nth-child(even)
+        grid-template-areas: ". c-img . c-text"
+        grid-template-columns: .5fr 2fr .5fr 2.3fr
+
+    &-text
+      grid-area: c-text
  
