@@ -61,9 +61,11 @@ a
   &.cta
     &-header
       font-size: 10px
-      padding: 5px 23px
+      padding: 5px 25px
       background-color: $grayish_blue
       color: $dark
+      margin-right: 2px
+      margin-top: -3px
 
 .container
   max-width: 1220px
@@ -78,26 +80,28 @@ a
 
   &-header
     //background-color: gray
-    padding: 24px 10px
+    padding: 24px 14px
     display: flex
     gap: 10px
     justify-content: space-between
 
 .hero
   //background-color: orange
-  padding-top: 43px
+  padding-top: 44px
 
   h1
-    font-size: 25px
+    font-size: 24px
     line-height: 35px
 
   p
-    margin-top: 26px
+    margin-top: 24px
+    font-size: 16px
+    line-height: 23px
 
   a
     &.btn
       display: inline-block
-      margin-top: 32px
+      margin-top: 35px
       min-width: 77%
 
   .hero
@@ -121,7 +125,7 @@ a
       width: 90%
 
   &-list
-    padding: 67px 20px
+    padding: 61px 20px
 
   &-item
     display: flex
@@ -137,7 +141,7 @@ a
 
     p
       font-size: 15px
-      margin-top: 16px
+      margin-top: 14px
       line-height: 21px
 
     &:nth-child(2)
@@ -145,7 +149,7 @@ a
         margin-top: 61px
 
       h2
-        margin-top: 36px
+        margin-top: 32px
 
     &:nth-child(3)
       .card-img
@@ -161,7 +165,7 @@ a
       border: 1px solid blue
 
   &-cta-content
-    margin-top: 15px
+    margin-top: 34px
     font-size: 12px
     line-height: 14px
     width: 100%    
@@ -179,15 +183,20 @@ a
       min-width: 57%
 
 .main-footer
-  padding-top: 55px
+  padding-top: 0
+  margin-top: -16px
   color: $light
+
+  display: grid
+  grid-template-columns: repeat(23, 1fr)
+  grid-template-rows: repeat(36, 1fr)
 
   a,
   p
     color: $light
 
   .container
-    padding: 10px 12px
+    padding: 0 16px
 
   ul
     list-style: none
@@ -229,6 +238,44 @@ a
           
           img
             filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(204deg) brightness(103%) contrast(101%)
+
+    &-content
+      grid-column: 1/27
+      grid-row: 6/46
+      background-color: $very_dark_cyan
+      padding-top: 151px
+
+    &-info
+      li
+        &:first-child
+          img
+            margin-top: 6px
+
+.card-cta-content
+  grid-column: 1/24
+  grid-row: 1/10
+  text-align: center
+
+  .container
+    background-color: $light
+    padding: 10px 12px
+    min-height: 183px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  h2
+    margin-top: 6px
+
+  a
+    &.btn
+      margin-top: 31px
+      min-width: 60%
+
+.footer-secondary
+  background-color: $very_dark_cyan
+  padding-bottom: 57px
 
   .huddle-credits
     font-size: 10px
@@ -417,6 +464,7 @@ a
         font-size: 32px
         line-height: 36px
         padding-top: 35px
+        margin-top: 0
 
       a
         &.btn
@@ -430,10 +478,11 @@ a
           font-weight: 600
 
   .main-footer
-    padding-top: 42px
+    padding-top: 48px
     display: grid
     grid-template-columns: repeat(12, 1fr)
     grid-template-rows: repeat(18, 40px)
+    margin-top: 0
     
     p
       white-space: pre-line
