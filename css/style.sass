@@ -15,9 +15,6 @@ $dark: $very_dark_cyan
   padding: 0
   box-sizing: border-box
 
-html
-  min-height: 100vh
-
 body
   height: 100%
   min-height: 100vh
@@ -102,7 +99,7 @@ a
     &.btn
       display: inline-block
       margin-top: 35px
-      min-width: 77%
+      width: 240px
 
   .hero
     &-img
@@ -284,7 +281,30 @@ a
     text-align: center
     color: $light
 
+
+@media (min-width: 778px)
+  .card-cta-content
+    grid-column: 5/20
+
+    .container
+      max-width: 797px
+      min-height: 285px
+
+    h2
+      font-size: 32px
+      line-height: 36px
+      padding-top: 35px
+      margin-top: 0
+
+  .main-footer
+    .footer
+      &-content
+        padding-top: 200px
+
 @media (min-width: 998px)
+  html
+    min-height: 100vh
+
   .container
     padding-left: 0
     padding-right: 0
@@ -320,7 +340,8 @@ a
         margin-top: 4px
 
   .hero
-    padding-top: 11px
+    padding-left: 21px
+    padding-right: 21px
 
     h1
       font-size: 40px
@@ -444,11 +465,14 @@ a
 
     &-text
       grid-area: c-text
- 
+
+@media (min-width: 1220px)
+  .hero
+    padding: 11px 0 0
+
+  .card
     &-cta-content
       > .container
-        max-width: 797px
-        min-height: 285px
         text-align: center
 
         display: flex
@@ -459,12 +483,6 @@ a
         padding-bottom: 52px
         padding-top: 37px
         margin-top: 10px
-
-      h2
-        font-size: 32px
-        line-height: 36px
-        padding-top: 35px
-        margin-top: 0
 
       a
         &.btn
@@ -565,4 +583,3 @@ a
       margin-top: -54px
 
       
-  
