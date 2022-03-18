@@ -20,8 +20,8 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ### Links
 
-- Solution URL: [Repo](https://github.com/karinaestaba/huddle-comunity-landing-page.git)
-- Live Site URL: [Demo](https://karinaestaba.github.io/huddle-comunity-landing-page)
+- Solution URL: [Repo](https://github.com/karinaestaba/huddle-community-landing-page.git)
+- Live Site URL: [Demo](https://karinaestaba.github.io/huddle-community-landing-page)
 
 ## My process
 
