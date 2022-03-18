@@ -79,6 +79,7 @@ a
   background-repeat: no-repeat
   background-size: cover
   background-color: $very_pale_cyan
+  padding-bottom: 14px
 
 .main
   &-content
@@ -130,7 +131,7 @@ a
       width: 90%
 
   &-list
-    padding: 61px 20px
+    padding: 47px 20px 61px
 
   &-item
     display: flex
@@ -287,10 +288,10 @@ a
     text-align: center
     color: $light
 
-
 @media (min-width: 778px)
   .bg-container
     background-image: url("../img/icon/bg-hero-desktop.svg")
+    padding-bottom: 50px
 
   .card-cta-content
     grid-column: 5/20
@@ -304,6 +305,11 @@ a
       line-height: 36px
       padding-top: 35px
       margin-top: 0
+
+  .main
+    &-header
+      padding-left: 20px
+      padding-right: 20px
 
   .main-footer
     grid-template-rows: repeat(20, 1fr)
@@ -342,7 +348,8 @@ a
 
   .main
     &-header
-      padding: 50px 0
+      padding-left: 20px
+      padding-right: 20px
 
     &-logo
       > img
@@ -398,7 +405,7 @@ a
   
   .card
     &-list
-      padding-top: 202px
+      padding-top: 152px
       padding-left: 20px
       padding-right: 20px
 
@@ -501,6 +508,10 @@ a
           font-size: 20px
           line-height: 45px
           font-weight: 600
+
+  .main
+    &-header
+      padding: 50px 0
 
   .main-footer
     padding-top: 48px
