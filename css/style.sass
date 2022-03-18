@@ -6,7 +6,7 @@ $very_pale_cyan: hsl(193, 100%, 96%)
 $very_dark_cyan: hsl(192, 100%, 9%)
 $grayish_blue: hsl(208, 11%, 55%)
 $light: hsl(0, 0%, 100%)
-$dark: $very_dark_cyan
+$light_medium: hsl(184, 24%, 77%)
 
 *,
 *::after,
@@ -37,7 +37,7 @@ h1,
 h2,
 h3
   font-weight: 600
-  color: $dark
+  color: $very_dark_cyan
   font-family: $font-secondary
 
 a
@@ -54,36 +54,43 @@ a
     border-radius: 28px
     padding: 12px 30px
     font-size: 12px
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px
+    font-weight: 600
 
   &.cta
     &-header
       font-size: 10px
       padding: 5px 25px
-      background-color: $grayish_blue
-      color: $dark
+      background-color: $light
+      color: $very_dark_cyan
       margin-right: 2px
       margin-top: -3px
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px
 
 .container
   max-width: 1220px
   padding: 10px 30px
   margin-left: auto
   margin-right: auto
-  border: 2px solid red
+  border: 2px solid transparent
+
+.bg-container
+  background-image: url("../img/icon/bg-hero-mobile.svg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-color: $very_pale_cyan
 
 .main
   &-content
     text-align: center
 
   &-header
-    //background-color: gray
     padding: 24px 14px
     display: flex
     gap: 10px
     justify-content: space-between
 
 .hero
-  //background-color: orange
   padding-top: 44px
 
   h1
@@ -94,6 +101,7 @@ a
     margin-top: 24px
     font-size: 16px
     line-height: 23px
+    color: $very_dark_cyan
 
   a
     &.btn
@@ -130,6 +138,8 @@ a
     padding: 38px 33px
     margin-bottom: 30px
     min-height: 490px
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px
+    border-radius: 14px
   
     h2
       font-size: 21px
@@ -155,12 +165,6 @@ a
       h2
         margin-top: 58px
 
-    &:nth-child(odd)
-      border: 1px solid green
-
-    &:nth-child(even)
-      border: 1px solid blue
-
   &-cta-content
     margin-top: 34px
     font-size: 12px
@@ -170,9 +174,9 @@ a
     padding-right: 10px
 
     .container
-      //background-color: green
       padding: 47px 1px 45px
       border-radius: 20px
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px
 
     .btn
       display: inline-block
@@ -182,7 +186,7 @@ a
 .main-footer
   padding-top: 0
   margin-top: -16px
-  color: $light
+  color: $light_medium
 
   display: grid
   grid-template-columns: repeat(23, 1fr)
@@ -190,7 +194,7 @@ a
 
   a,
   p
-    color: $light
+    color: $light_medium
 
   .container
     padding: 0 16px
@@ -214,7 +218,8 @@ a
   .footer
     &-logo
       display: block
-      filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(204deg) brightness(103%) contrast(101%)
+      > img
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(174deg) brightness(185%) contrast(102%)
 
     &-social
       flex-direction: row
@@ -234,7 +239,7 @@ a
           align-items: center
           
           img
-            filter: invert(100%) sepia(2%) saturate(0%) hue-rotate(204deg) brightness(103%) contrast(101%)
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(174deg) brightness(185%) contrast(102%)
 
     &-content
       grid-column: 1/27
@@ -269,6 +274,7 @@ a
     &.btn
       margin-top: 31px
       min-width: 60%
+      color: $light
 
 .footer-secondary
   background-color: $very_dark_cyan
@@ -283,6 +289,9 @@ a
 
 
 @media (min-width: 778px)
+  .bg-container
+    background-image: url("../img/icon/bg-hero-desktop.svg")
+
   .card-cta-content
     grid-column: 5/20
 
@@ -297,6 +306,8 @@ a
       margin-top: 0
 
   .main-footer
+    grid-template-rows: repeat(20, 1fr)
+
     .footer
       &-content
         padding-top: 200px
@@ -324,9 +335,8 @@ a
     &.cta-header
       width: 199px
       padding: 14px
-      font-size: 12px
+      font-size: 14px
       font-weight: 600
-      letter-spacing: 1px
       margin-top: -5px
       margin-right: -1px
 
@@ -352,11 +362,10 @@ a
       margin-left: -3px
 
     p
-      line-height: 29px
-      white-space: pre-line
       margin-top: -7px
       line-height: 29px
       margin-left: -2px
+      font-size: 18px
 
     > .container
       display: grid
@@ -420,7 +429,6 @@ a
         font-size: 18px
         line-height: 27px
         margin-top: 14px
-        white-space: pre-line
         margin-left: -7px
 
       &:nth-child(2)
@@ -431,7 +439,6 @@ a
         p
           margin-top: 16px
           margin-left: -8px
-          white-space: pre-line
 
         .card-img
           margin-right: 15px
@@ -577,9 +584,7 @@ a
     .huddle-credits
       font-size: 12.4px
       line-height: 16px
-      color: $light
+      color: $light_medium
       display: block
       text-align: right
       margin-top: -54px
-
-      
