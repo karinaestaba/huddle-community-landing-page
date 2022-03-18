@@ -31,8 +31,6 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 - CSS custom properties
 - Flexbox, CSS GRID
 - Sass
-- Vanilla javascript.
-- Intersection observer
 
 ## Author
 
