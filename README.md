@@ -1,6 +1,6 @@
 # Frontend Mentor - Huddle landing page with alternating feature blocks solution
 
-This is a solution to the [Huddle landing page with alternating feature blocks challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Huddle landing page with alternating feature blocks challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100).
 
 ## Table of contents
 
@@ -20,8 +20,8 @@ This is a solution to the [Huddle landing page with alternating feature blocks c
 
 ### Links
 
-- Solution URL: [Repo](https://github.com/karinaestaba/huddle-landing-page.git)
-- Live Site URL: [Demo](https://karinaestaba.github.io/huddle-landing-page)
+- Solution URL: [Repo](https://github.com/karinaestaba/huddle-community-landing-page.git)
+- Live Site URL: [Demo](https://karinaestaba.github.io/huddle-community-landing-page)
 
 ## My process
 
