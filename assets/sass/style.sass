@@ -78,7 +78,7 @@ a
   border: 2px solid transparent
 
 .bg-container
-  background-image: url("../img/icon/bg-hero-mobile.svg")
+  background-image: url("../images/icon/bg-hero-mobile.svg")
   background-repeat: no-repeat
   background-size: cover
   background-color: $very_pale_cyan
@@ -308,9 +308,23 @@ a
     text-align: center
     color: $light
 
+.credits 
+  background-color: $very_dark_cyan 
+  text-align: center
+  padding-bottom: 20px
+  font-size: 13px
+
+  a
+    color: $light
+    transition: all .5s ease
+    white-space: nowrap
+
+    &:hover
+      opacity: .8
+
 @media (min-width: 778px)
   .bg-container
-    background-image: url("../img/icon/bg-hero-desktop.svg")
+    background-image: url("../images/icon/bg-hero-desktop.svg")
     padding-bottom: 50px
 
   .card-cta-content
